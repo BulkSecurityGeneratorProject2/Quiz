@@ -1,0 +1,28 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "score"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "count",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "duration",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20151022192935",
+    "dto": "no",
+    "pagination": "no"
+}

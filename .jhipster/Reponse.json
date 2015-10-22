@@ -1,0 +1,22 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "question",
+            "otherEntityName": "question",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "label"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "label",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20151022192336",
+    "dto": "no",
+    "pagination": "no"
+}

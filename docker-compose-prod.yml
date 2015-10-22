@@ -1,0 +1,11 @@
+jhipster-prod-postgresql:
+  container_name: quiz-prod-postgresql
+  image: postgres
+  # volumes:
+  # - ~/volumes/jhipster/quiz/prod-postgresql/:/var/lib/postgresql/
+  environment:
+  - POSTGRES_USER=quiz
+  - POSTGRES_PASSWORD=
+  ports:
+  - "5432:5432"
+

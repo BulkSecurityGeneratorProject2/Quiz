@@ -1,0 +1,21 @@
+{
+    "quizApp": {
+        "score" : {
+            "home": {
+                "title": "Scores",
+                "createLabel": "Créer un nouveau Score",
+                "createOrEditLabel": "Créer ou éditer un Score"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Score {{ id }} ?"
+            },
+            "detail": {
+                "title": "Score"
+            },
+            "count": "Count",
+            "duration": "Duration",
+            "user": "User"
+        }
+    }
+}
+

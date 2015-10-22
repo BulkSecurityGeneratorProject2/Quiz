@@ -1,0 +1,89 @@
+<div>
+    <h2 translate="quizApp.reponse_joueur.home.title">Reponse_joueurs</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="reponse_joueur.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="quizApp.reponse_joueur.home.createLabel">Create a new Reponse_joueur</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteReponse_joueurConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(reponse_joueur.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="quizApp.reponse_joueur.delete.question" translate-values="{id: '{{reponse_joueur.id}}'}">Are you sure you want to delete this Reponse_joueur?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="global.field.id">ID</th>
+                    <th translate="quizApp.reponse_joueur.label">Label</th>
+                    <th translate="quizApp.reponse_joueur.label_reponse">Label_reponse</th>
+                    <th translate="quizApp.reponse_joueur.reponse_ok">Reponse_ok</th>
+                    <th translate="quizApp.reponse_joueur.user">user</th>
+                    <th translate="quizApp.reponse_joueur.question">question</th>
+                    <th translate="quizApp.reponse_joueur.reponse">reponse</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="reponse_joueur in reponse_joueurs track by reponse_joueur.id">
+                    <td><a ui-sref="reponse_joueur.detail({id:reponse_joueur.id})">{{reponse_joueur.id}}</a></td>
+                    <td>{{reponse_joueur.label}}</td>
+                    <td>{{reponse_joueur.label_reponse}}</td>
+                    <td>{{reponse_joueur.reponse_ok}}</td>
+                    <td>
+                        {{reponse_joueur.user.id}}
+                    </td>
+                    <td>
+                        <a ui-sref="question.detail({id:reponse_joueur.question.id})">{{reponse_joueur.question.label}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="reponse.detail({id:reponse_joueur.reponse.id})">{{reponse_joueur.reponse.label}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="reponse_joueur.detail({id:reponse_joueur.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="reponse_joueur.edit({id:reponse_joueur.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(reponse_joueur.id)"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

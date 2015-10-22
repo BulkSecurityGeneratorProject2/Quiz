@@ -1,0 +1,24 @@
+{
+    "quizApp": {
+        "reponse_joueur" : {
+            "home": {
+                "title": "Reponse_joueurs",
+                "createLabel": "Créer un nouveau Reponse_joueur",
+                "createOrEditLabel": "Créer ou éditer un Reponse_joueur"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Reponse_joueur {{ id }} ?"
+            },
+            "detail": {
+                "title": "Reponse_joueur"
+            },
+            "label": "Label",
+            "label_reponse": "Label_reponse",
+            "reponse_ok": "Reponse_ok",
+            "user": "User",
+            "question": "Question",
+            "reponse": "Reponse"
+        }
+    }
+}
+

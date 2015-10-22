@@ -1,0 +1,20 @@
+{
+    "quizApp": {
+        "reponse" : {
+            "home": {
+                "title": "Reponses",
+                "createLabel": "Créer un nouveau Reponse",
+                "createOrEditLabel": "Créer ou éditer un Reponse"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Reponse {{ id }} ?"
+            },
+            "detail": {
+                "title": "Reponse"
+            },
+            "label": "Label",
+            "question": "Question"
+        }
+    }
+}
+

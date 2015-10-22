@@ -1,0 +1,38 @@
+
+<div>
+    <h2><span translate="quizApp.reponse.detail.title">Reponse</span> {{reponse.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="quizApp.reponse.label">Label</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{reponse.label}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="quizApp.reponse.question">question</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="question.detail({id:reponse.question.id})">{{reponse.question.label}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

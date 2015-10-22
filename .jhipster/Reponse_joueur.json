@@ -1,0 +1,49 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "question",
+            "otherEntityName": "question",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "label",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "reponse_joueur"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "reponse",
+            "otherEntityName": "reponse",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "label",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "reponse_joueur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "label",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "label_reponse",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "reponse_ok",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20151022192744",
+    "dto": "no",
+    "pagination": "no"
+}

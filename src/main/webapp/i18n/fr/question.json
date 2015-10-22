@@ -1,0 +1,19 @@
+{
+    "quizApp": {
+        "question" : {
+            "home": {
+                "title": "Questions",
+                "createLabel": "Créer un nouveau Question",
+                "createOrEditLabel": "Créer ou éditer un Question"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Question {{ id }} ?"
+            },
+            "detail": {
+                "title": "Question"
+            },
+            "label": "Label"
+        }
+    }
+}
+
