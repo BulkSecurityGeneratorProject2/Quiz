@@ -1,11 +1,11 @@
 {
     "main": {
-        "title": "Bienvenue, Java Hipster !",
-        "subtitle": "Ceci est votre page d'accueil",
+        "title": "Bienvenue sur le quiz",
+        "subtitle": "Jouez pour gagner des tas de cadeaux !",
         "logged": {
             "message": "Vous êtes connecté en tant que \"{{username}}\"."
         },
-        "question": "Si vous avez des questions à propos de JHipster:",
+        "question": "Si vous avez des questions à propos du quiz :",
         "link": {
             "homepage": "Page d'accueil de JHipster",
             "stackoverflow": "JHipster sur Stack Overflow",
@@ -14,6 +14,7 @@
             "contact": "Contactez-nous sur Twitter @java_hipster"
         },
         "like": "Si vous aimez JHipster, donnez nous une étoile sur",
-        "github": "Github"
+        "github": "Github",
+        "startquiz": "Jouer !"
     }
 }
